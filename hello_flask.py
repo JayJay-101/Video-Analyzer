@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request,escape
-from vsearch import s4letter
 
 app = Flask(__name__)
 
