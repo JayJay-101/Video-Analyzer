@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ the_title }}</h2>
+<form method='POST' action='/log'>
+<table>
+<p>Use this form to submit a search request:</p>
+<tr>
+	<td>
+		Youtube Link
+	</td>
+	<td>
+		<input name='link' type='TEXT'
+			   placeholder='paste link here' width='60'>
+	</td>
+</tr>
+</table>
+<p>When you're ready, click this button:</p>
+<p><input value='submit!' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
